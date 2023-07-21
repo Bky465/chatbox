@@ -2,17 +2,19 @@
 import React,{useState,useEffect} from 'react'
 import {BsChatDotsFill , BsApple} from 'react-icons/bs'
 import {BiLogoPlayStore , BiMenuAltLeft} from 'react-icons/bi'
+import { useRouter } from 'next/navigation'
 
 const Navbar = () => {
   const [width,setWidth]=useState(null)
+  
   const [toggle,setToggle]=useState(false)
+  const router=useRouter()
   useEffect(()=>{
-    // setWidth(window.innerWidth)
+    setWidth(window.innerWidth)
         window.addEventListener('resize',(e)=>{
               setWidth(e.target.innerWidth)
         })
-      
-  },[])
+  },[router])
   return (
     <div className='relative  '>
 <nav className={` pt-5  relative overflow-x-hidden`}>
@@ -21,7 +23,7 @@ const Navbar = () => {
       <BsChatDotsFill  className='text-xl  text-white mr-1'/>
       <span className="self-center text-lg font-semibold whitespace-nowrap text-white">Chatbox</span>
   </a>
-  <div className={` ${window.innerWidth>768 || width > 768 ? 'flex  ':'hidden' }   items-center justify-between   `}>
+  <div className={` ${width > 768 ? 'flex  ':'hidden' }   items-center justify-between   `}>
     <ul className="flex  font-medium space-x-16  gap-y-5">
       <li>
         <a href="#" className="block   text-white  text-sm font-semibold  rounded md:bg-transparent  " aria-current="page">Home</a>
@@ -39,7 +41,7 @@ const Navbar = () => {
   </div>
   <div className='flex justify-center items-center'>
   <button type="button" className="text-blue-700 bg-white  border-none focus:outline-none  font-bold rounded-full  text-xs px-5 py-3.5  ">Try For Free</button>
-  <button onClick={()=>setToggle(!toggle)} className={` ${window.innerWidth>768 || width > 768 ? ' hidden':'flex '} ml-4 w-8 h-8  justify-center items-center rounded-full bg-white text-blue-700 text-lg border-none focus:outline-none`}>
+  <button onClick={()=>setToggle(!toggle)} className={` ${ width > 768 ? ' hidden':'flex '} ml-4 w-8 h-8  justify-center items-center rounded-full bg-white text-blue-700 text-lg border-none focus:outline-none`}>
       <BiMenuAltLeft/>
   </button>
   </div>
