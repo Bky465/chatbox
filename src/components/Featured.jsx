@@ -4,7 +4,7 @@ import { BsFillClockFill, BsFillEmojiSmileFill } from 'react-icons/bs'
 import { MdLock } from 'react-icons/md'
 const Featured = () => {
     return (
-        <div className='px-14 base:mt-28 mt-8'>
+        <div className='sm:px-14 px-8 base:mt-28 mt-8'>
             <div className='flex justify-center'>
                 <button type="button" className="text-blue-600 bg-gray-100  border-none focus:outline-none  font-bold rounded-full  text-xs px-3 py-2  shadow ">Featured</button>
             </div>

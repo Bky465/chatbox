@@ -3,12 +3,12 @@ import { BsChatDotsFill, BsApple } from 'react-icons/bs'
 import { BiLogoPlayStore } from 'react-icons/bi'
 const Footer = () => {
     return (
-        <footer className=' w-full px-14 pt-14 pb-5 bg-black'>
+        <footer className=' w-full sm:px-14 px-8 pt-14 pb-5 bg-black'>
             <div className='flex md:flex-row flex-col justify-between md:items-center border-b border-gray-500 pb-10 '>
                 <p className='font-bold text-4xl text-white'>Want to stay Connected?</p>
-                <div className='flex gap-x-5 items-center md:mt-0 mt-5'>
-                    <button type="button" className="w-fit text-white bg-blue-700  border-none focus:outline-none  font-bold rounded-full  text-xs xxs:px-5 px-3 py-3.5 flex items-center  space-x-1 "><BsApple className='text-white text-lg' /> <span>Download now</span> </button>
-                    <button type="button" className="w-fit text-white bg-transparent  border-2 focus:outline-none  font-bold rounded-full  text-xs xxs:px-5 px-3 py-3.5 flex  items-center space-x-1 "> <BiLogoPlayStore className='text-white text-lg' /> <span>Download now</span></button>
+                <div className='flex sm:flex-row flex-col gap-5 items-center md:mt-0 mt-5'>
+                    <button type="button" className="w-fit text-white bg-blue-700  border-none focus:outline-none  font-bold rounded-full  text-xs sm:px-5 px-3 py-3.5 flex items-center  space-x-1 "><BsApple className='text-white text-lg' /> <span>Download now</span> </button>
+                    <button type="button" className="w-fit text-white bg-transparent  border-2 focus:outline-none  font-bold rounded-full  text-xs sm:px-5 px-3 py-3.5 flex  items-center space-x-1 "> <BiLogoPlayStore className='text-white text-lg' /> <span>Download now</span></button>
                 </div>
             </div>
             <div className='pt-10 flex md:flex-row flex-col  justify-between gap-y-10'>

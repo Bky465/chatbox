@@ -1,8 +1,8 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-const inter = Inter({ subsets: ['latin'] })
+const Popp = Poppins({ subsets: ['latin'],weight:['100','200','300','400','500','600'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body   suppressHydrationWarning={true}  className={inter.className}>
+      <body   suppressHydrationWarning={true}  className={Popp.className}>
       <div className='h-screen overflow-x-hidden'>
       {/* <Navbar/> */}
       {children}

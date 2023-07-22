@@ -8,7 +8,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  font-family: 'Poppins', sans-serif;
+}
 .bg-gradient{
   background: rgb(68,80,246);
 background: linear-gradient(180deg, rgba(68,80,246,1) 70%, rgba(255,255,255,1) 30%);
