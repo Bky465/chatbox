@@ -24,9 +24,16 @@ export default function Home() {
           </div>
          </section>
          <div className='mt-10 w-full flex justify-center'>
-         <div className=' bg-chat_bg bg-cover w-full 2xl:h-[50rem] md:h-[30rem] h-[20rem] rounded-xl shadow-xl'></div>
+         <div className=' bg-chat_bg bg-cover w-full 2xl:h-[50rem] md:h-[30rem] h-[20rem] rounded-xl shadow-md'></div>
          </div>
      </main>
+     <div className='sm:px-14 px-8  flex flex-wrap justify-between sm:mt-20 mt-10 text-xl font-semibold text-gray-300  '>
+           <p className='px-5 pb-2'>stripe</p>
+           <p className='px-5 pb-2'>afterpay</p>
+           <p className='px-5 pb-2'>hopin </p>
+           <p className='px-5 pb-2'>splunk</p>
+           <p className='px-5 pb-2'>attentive</p>
+     </div>
     <Featured/>     
      </>
   )
