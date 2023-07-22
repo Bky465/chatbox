@@ -27,12 +27,12 @@ export default function Home() {
          <div className=' bg-chat_bg bg-cover w-full 2xl:h-[50rem] md:h-[30rem] h-[20rem] rounded-xl shadow-md'></div>
          </div>
      </main>
-     <div className='sm:px-14 px-8  flex flex-wrap justify-between sm:mt-20 mt-10 text-xl font-semibold text-gray-300  '>
-           <p className='px-5 pb-2'>stripe</p>
-           <p className='px-5 pb-2'>afterpay</p>
-           <p className='px-5 pb-2'>hopin </p>
-           <p className='px-5 pb-2'>splunk</p>
-           <p className='px-5 pb-2'>attentive</p>
+     <div className='sm:px-14 px-8 gap-5 flex flex-wrap justify-between sm:mt-20 mt-10 text-xl font-semibold text-gray-300  '>
+           <p >stripe</p>
+           <p >afterpay</p>
+           <p >hopin </p>
+           <p >splunk</p>
+           <p >attentive</p>
      </div>
     <Featured/>     
      </>
